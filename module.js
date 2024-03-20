@@ -20,3 +20,6 @@ import { } from './src/features/email/index.js';
 import { } from './src/features/wire/index.js';
 
 import { } from './src/features/contacts/index.js';
+
+import { } from './src/features/multi-addresses/index.js';
+
