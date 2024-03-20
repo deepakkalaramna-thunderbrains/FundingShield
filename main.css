@@ -1,0 +1,302 @@
+.row {
+  display: -webkit-box;
+  display:flex;
+} 
+.column2 { 
+  padding: 22px 10px 10px 0px;
+}
+.column1 {
+  padding: 10px 14px 10px 0px;      
+}
+.txt_alin{
+  font-size: 1.2rem;
+  font-weight: bold; 
+  font-family: "Proxima Nova",sans-serif;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.btnDropdown{
+  background-color:#7bb873;
+  color: white;
+  padding: 24px 55px 15px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Proxima Nova",sans-serif;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 200;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .btnDropdown {
+  background-color: #3e8e41;
+}
+.dropdown-menu {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-color: white;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(135deg);
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -18px;
+  margin-left: 200px;
+}
+table#customers .dropdown-menu{
+  margin-left: 174px;
+}
+table#customers a#ddlDocument{
+  padding: 5px 40px 0px 4px;
+  font-size: 14px;
+}
+.url_col{
+  color: #64afe5;
+  text-decoration: none;
+  font-family: "Proxima Nova",sans-serif;
+}
+.txt_col{
+color: #484848 !important;
+text-transform: uppercase;
+background: #F2F3F4;
+font-family: "Proxima Nova",sans-serif;
+min-width: 150px;
+}
+.sc-wireline {
+  color: #484848;
+  padding: 10px 0px 0px 1px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.lender data{
+  color: #484848;
+  white-space: normal;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 15px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+/* .FAContainerForm { */
+  .column-main{
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+/* .FAContainerForm .FAInputContainer { */
+  .form-control{
+    width: 171px;
+    height: 30px;
+    background-color: #f5f5f6;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #e3e3e3;
+    font-size: 15px;
+    color: var(--title-color);
+    line-height: 30px;
+    padding: 5px 8px 5px 8px;
+    transition: border-color 0.2s;
+}
+
+.enable-control{
+  background-color: #ffffff !important;
+}
+
+.file-upload {
+  margin-top: 50px;
+}
+.search{
+  width: 250px;
+  height: 35px;
+  border: 1px solid #7ab873;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-right: 70px;
+}
+.business-list{
+  margin-top: 50px;
+}
+.lender-list, .closingagent-list{
+margin-top: 50px;
+}
+.business-details{
+margin-top: 50px;
+}
+.address {
+display: block;
+padding: 5px;
+}
+.file-list{
+margin-top: 37px;
+}
+#txtInput{
+  margin: 22px 132px 22px 0px;
+  width: 145px;
+  height: 45px;
+}
+.file-upload-wrapper {
+  position: relative;
+  width: 238px;
+  height: 56px;
+  box-shadow: 0px 0px 8px #888888;
+}
+.file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 16px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px 15px;
+  display: block;
+  width: calc(100% - 40px);
+  pointer-events: none;
+  z-index: 20;
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 300;
+  font-family: "Proxima Nova",sans-serif;
+}
+.file-upload-wrapper:before {
+  content: "Select";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 60px;
+  background-color:#7bb873;
+  color: #fff;
+  z-index: 25;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 15px;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+  font-family: "Proxima Nova",sans-serif;
+}
+.file-upload-wrapper:hover:before {
+  background: #3d8c63;
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+  
+.form-field-span {
+  position: relative;
+  top: 16px;
+  right: 171px;
+  margin: 30px 0px 10px 2px;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 13px;
+  color: #EF3C62;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.margin-top25{
+  margin-top: 25px;
+}
+.margin-left30{
+  margin-left: 30px;
+}
+.margin-left15{
+  margin-left: 15px;
+}
+.disabled-color{
+  background-color: #c9e2c7 !important;
+}
+.margin-left13{
+  margin-left: 13%;
+}
+.margin-left9{
+  margin-left: 9%;
+}
+
+
+.rq-row{
+  width: 100%;
+  margin-left: 140px;
+  margin-top: 5px;
+}
+.rq-col{
+  width: 20.25%;
+}
+
+.mt25{
+  margin-top: 25px;
+}
+
+.ml30{
+  margin-left: 30px;
+}
+
+.ml15{
+  margin-left: 15px;
+}
+
+.ml9{
+  margin-left: 9%;
+}
+
+.ml3{
+  margin-left: 3%;
+}
+
+.pt5{
+  padding-top: 4%;
+}
+.mt3{
+  margin-top: 3px !important;
+}
+
+.mt0{
+  margin-top: 0px !important;
+}
+
