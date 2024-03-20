@@ -39,6 +39,12 @@ export class AppletActionConstants {
         appletTitle: "Send Documents Email",
         data: null,
         idKey: ""
+    },
+    {
+        actionName: "onMultiAddressessClicked",
+        appletTitle: "Show Multi Adressess",
+        data: null,
+        idKey: "multi-addressess"
     }
     ];
 
