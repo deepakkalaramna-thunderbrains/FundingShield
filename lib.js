@@ -24,7 +24,7 @@ var FAAppletClient = (function () {
       }
   
       function _eventHandlerMatches(eventName, eventType) {
-        const splitType = eventType.split('.')[1];
+        const splitType = eventType?.split('.')[1];
         return splitType === eventName;
       }
   
