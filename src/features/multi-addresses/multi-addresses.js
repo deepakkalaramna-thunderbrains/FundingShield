@@ -23,7 +23,7 @@ export class MultiAddress extends ListComponent {
                 </div>
             </div>
 
-
+            <div class="mt-4"></div>
              <table class="table table-striped">
                <thead class="table-light text-center"> 
                     <tr>
