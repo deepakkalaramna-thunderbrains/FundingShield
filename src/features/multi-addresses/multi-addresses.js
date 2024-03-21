@@ -29,7 +29,6 @@ export class MultiAddress extends ListComponent {
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Table rows for addresses will be dynamically added here -->
                             </tbody>
                         </table>
                         <div class="row">
