@@ -42,7 +42,7 @@ export class AppletActionConstants {
     },
     {
         actionName: "onMultiAddressesClicked",
-        appletTitle: " Multi- Addresses",
+        appletTitle: " Multi - Addresses",
         data: null,
         idKey: "multi-addresses"
     }
