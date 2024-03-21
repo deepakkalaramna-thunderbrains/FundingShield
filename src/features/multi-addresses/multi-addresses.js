@@ -2,13 +2,13 @@ import { ComponentConstant } from "../../constants/ComponentConstant.js";
 import { ListComponent } from "../../components/ListComponent.js";
 
 export class MultiAddress extends ListComponent {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    setHTML() {
-        return 
-           ` <div class="container">
+  setHTML() {
+    return;
+    ` <div class="container">
                 <div class="row border border-secondary rounded">
                     <div class="col-md-12">
                         <div class="container">
@@ -29,11 +29,32 @@ export class MultiAddress extends ListComponent {
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Table rows will be added with actual data -->
-                        </tbody>
+    <tr>
+        <td>123 Main St</td>
+        <td>Apt 101</td>
+        <td>New York</td>
+        <td>NY</td>
+        <td>10001</td>
+    </tr>
+    <tr>
+        <td>456 Elm St</td>
+        <td>Suite 200</td>
+        <td>Los Angeles</td>
+        <td>CA</td>
+        <td>90001</td>
+    </tr>
+    <tr>
+        <td>789 Oak St</td>
+        <td>Unit B</td>
+        <td>Chicago</td>
+        <td>IL</td>
+        <td>60601</td>
+    </tr>
+</tbody>
+
                     </table>
             </div>`;
-    }
+  }
 }
 
 window.customElements.define(ComponentConstant.MULTIADDRESSES, MultiAddress);
