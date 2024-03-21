@@ -1,4 +1,4 @@
-import { ComponentConstant } from "../../constants/ComponentConstant";
+import { ComponentConstant } from "../../constants/ComponentConstant.js";
 export class MultiAdress{
     setHTML(){
         return`<form id="multi-addresses">
