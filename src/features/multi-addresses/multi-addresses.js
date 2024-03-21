@@ -1,12 +1,12 @@
 import { ComponentConstant } from "../../constants/ComponentConstant.js";
-import { FormComponent } from "../../components/FormComponent.js";
-export class MultiAdress extends FormComponent{
+import { ListComponent } from "../../components/ListComponent.js";
+export class MultiAdress extends ListComponent{
     constructor() {
         super();
     }
     setHTML(){
         return`<form id="multi-addresses">
-        <h2>Multi Address Form</h2>
+        <h2>Multi Address</h2>
         <div class="container">
                     <div class="row p-t20">
                         <form-field-alpha-num class="col-md-6" label="Company Name" name="name"></form-field-alpha-num>
