@@ -11,16 +11,17 @@ export class MultiAddress extends ListComponent {
     <div class="row border border-secondary rounded">
         <div class="col-md-12">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pt-2 text-left">
-                        <input style="float: right;" type="text" id="searchInput" class="form-control" placeholder="Search...">
-                    </div>
-                    <div class="col-md-6 pt-2 text-right">
-                        <button type="button" id="searchButton" class="btn btn-outline-primary">
-                            <i class="bi bi-search"></i> Search
-                        </button>
-                    </div>
-                </div>
+            <div class="row">
+            <div class="col-md-6 pt-2 text-left">
+                <input style="float: right;" type="text" id="searchInput" class="form-control" placeholder="Search...">
+            </div>
+            <div class="col-md-6 pt-2 text-right">
+                <button type="button" id="searchButton" class="btn btn-outline-primary rounded-circle p-2">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        
             </div>
 
             <div class="mt-4"></div>
