@@ -57,14 +57,9 @@ var FAAppletClient = (function () {
       }
   
       const _eventHandler = (event) => {
-        //let data = event.data;
-        const data = `{
-          "type": "fa_applet[aHR0cHM6Ly9kc2hoNWpzeXE3dzlyLmNsb3VkZnJvbnQubmV0L2luZGV4Lmh0bWw=].onMultiAddressessClicked",
-          "payload": {
-            "__typename": "entityValue",
-            "id": "561e61a0-eed3-4029-bfe7-10b301de6921"
-          }`;
-        //data = JSON.parse(jsonED);
+        let data = event.data;
+        const jsonED = `{"type":"fa_applet[aHR0cHM6Ly9kc2hoNWpzeXE3dzlyLmNsb3VkZnJvbnQubmV0L2luZGV4Lmh0bWw=].onMultiAddressessClicked","payload":{"__typename":"entityValue"}`;
+        data = JSON.parse(jsonED);
         if (!data) {
           return console.error('Wrong type of event sent');
         }
