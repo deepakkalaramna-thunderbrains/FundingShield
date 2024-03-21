@@ -58,4 +58,4 @@ export class MultiAddress extends ListComponent {
   }
 }
 
-window.customElements.define(ComponentConstant.MULTIADDRESSES, MultiAddress);
+window.customElements.define(ComponentConstant.MULTIADDRESSESS, MultiAddress);
