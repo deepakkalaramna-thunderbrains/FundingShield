@@ -6,6 +6,7 @@ export class MultiAdress extends FormComponent{
     }
     setHTML(){
         return`<form id="multi-addresses">
+        <h2>Multi Address Form</h2>
         <div class="container">
                     <div class="row p-t20">
                         <form-field-alpha-num class="col-md-6" label="Company Name" name="name"></form-field-alpha-num>
