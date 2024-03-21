@@ -41,10 +41,10 @@ export class AppletActionConstants {
         idKey: ""
     },
     {
-        actionName: "onMultiAddressessClicked",
-        appletTitle: "Show Multi Adressess",
+        actionName: "onMultiAddressesClicked",
+        appletTitle: " Multi- Addresses",
         data: null,
-        idKey: "multi-addressess"
+        idKey: "multi-addresses"
     }
     ];
 

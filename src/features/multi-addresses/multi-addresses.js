@@ -7,8 +7,7 @@ export class MultiAddress extends ListComponent {
   }
 
   setHTML() {
-    return `
-    <div class="container">
+    return `<div class="container">
     <div class="row border border-secondary rounded">
         <div class="col-md-12">
             <div class="container">
@@ -22,8 +21,8 @@ export class MultiAddress extends ListComponent {
                 </div>
             </div>
 
-            <table class="table table-striped">
-                <thead class="thead-dark">
+             <table class="table table-striped">
+               <thead class="table-light text-center"> 
                     <tr>
                         <th>Address 1</th>
                         <th>Address 2</th>
@@ -56,11 +55,16 @@ export class MultiAddress extends ListComponent {
                     </tr>
                 </tbody>
             </table>
+            <div class="row border border-secondary rounded m-t30 p-a20">
+                    <document-upload style="width: 100%"></document-upload>
+                </div> 
         </div>
     </div>
-</div>
-`;
+</div>`;
+    
+			
+        
   }
 }
 
-window.customElements.define(ComponentConstant.MULTIADDRESSESS, MultiAddress);
+window.customElements.define(ComponentConstant.MULTIADDRESSES, MultiAddress);
