@@ -14,7 +14,7 @@ export class MultiAddress extends ListComponent {
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 pt-2 text-left">
-                                <input style="float: right;" type="button" id="openAllDocuments" class="btn btn-outline-secondary" value="Open All Documents">
+                                <input style="float: right;" type="button"  class="btn btn-outline-secondary" >
                             </div>
                         </div>
                     </div>
