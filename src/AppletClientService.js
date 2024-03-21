@@ -73,7 +73,7 @@ class AppletClientService {
         componentName = ComponentConstant.EMAIL_FORM;
         break;
       case "onMultiAddressesClicked":
-        componentName = ComponentConstant.MULTIADDRESSES;
+        componentName = ComponentConstant.MULTI_ADDRESSES;
         break;
       default:
         componentName = ComponentConstant.DOCUMENT_LIST;
