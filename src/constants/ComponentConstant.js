@@ -57,7 +57,7 @@ export class ComponentConstant {
 
     static PAGINATION_COMPONENT = "pagination-component"
 
-    static MULTIADDRESSES="multi-addresses"
+    static MULTI_ADDRESSES="multi-addresses"
 
 
 }

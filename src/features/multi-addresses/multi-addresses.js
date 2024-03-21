@@ -7,26 +7,22 @@ export class MultiAddress extends ListComponent {
   }
 
   setHTML() {
-    return `<div class="container">
-    <div class="row border border-secondary rounded">
+    return` <div class="container mt-4">
+    <div class="row border border-secondary rounded p-3">
         <div class="col-md-12">
-            <div class="container">
-            <div class="row">
-            <div class="col-md-6 pt-2 text-left">
-                <input style="float: right;" type="text" id="searchInput" class="form-control" placeholder="Search...">
-            </div>
-            <div class="col-md-6 pt-2 text-right">
-                <button type="button" id="searchButton" class="btn btn-outline-primary rounded-circle p-2">
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
-        </div>
-        
+            <div class="row align-items-center mb-3">
+                <div class="col-md-6">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+                </div>
+                <div class="col-md-6 text-md-right mt-2 mt-md-0">
+                    <button type="button" id="searchButton" class="btn btn-primary">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
             </div>
 
-            <div class="mt-4"></div>
-             <table class="table table-striped">
-               <thead class="table-light text-center"> 
+            <table class="table table-striped">
+                <thead class="thead-light text-center"> 
                     <tr>
                         <th>Address 1</th>
                         <th>Address 2</th>
@@ -59,13 +55,10 @@ export class MultiAddress extends ListComponent {
                     </tr>
                 </tbody>
             </table>
-           
         </div>
     </div>
 </div>`;
-    
-			
-        
+
   }
 }
 
