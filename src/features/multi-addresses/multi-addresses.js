@@ -1,5 +1,9 @@
 import { ComponentConstant } from "../../constants/ComponentConstant.js";
-export class MultiAdress{
+import { FormComponent } from "../../components/FormComponent.js";
+export class MultiAdress extends FormComponent{
+    constructor() {
+        super();
+    }
     setHTML(){
         return`<form id="multi-addresses">
         <div class="container">
