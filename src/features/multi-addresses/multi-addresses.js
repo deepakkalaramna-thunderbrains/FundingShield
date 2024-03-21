@@ -1,23 +1,54 @@
 import { ComponentConstant } from "../../constants/ComponentConstant.js";
 import { ListComponent } from "../../components/ListComponent.js";
-export class MultiAdress extends ListComponent{
+
+export class MultiAddress extends ListComponent {
     constructor() {
         super();
     }
-    setHTML(){
-        return`<form id="multi-addresses">
-        <h2>Multi Address</h2>
-        <div class="container">
-                    <div class="row p-t20">
-                        <form-field-alpha-num class="col-md-6" label="Company Name" name="name"></form-field-alpha-num>
-                        <form-field-alpha-num class="col-md-6" label="Contact Email" name="email"></form-field-alpha-num>
+
+    setHTML() {
+        return `
+            <div class="container">
+                <div class="row border border-secondary rounded">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 pt-2 text-left">
+                                    <input style="float: right;" type="button" id="openAllDocuments" class="btn btn-outline-secondary" value="Open All Documents">
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped">
+                            <thead class="table-light text-center">
+                                <tr>
+                                    <th>address 1</th>
+                                    <th>address 2</th>
+                                    <th>city</th>
+                                    <th>state</th>
+                                    <th>zip Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows for addresses will be dynamically added here -->
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input style="float: left;" type="button" id="firstReviewReceived" class="btn btn-outline-secondary" value="1st Review Received">
+                            </div>
+                            <div class="col-md-8">
+                                <input style="float: left;" type="button" id="validateAllFirst" class="btn btn-outline-secondary" value="Validate First Reviewer">
+                                <input style="float: right;" type="button" id="validateAll" class="btn btn-outline-secondary" value="Validate Second Reviewer">
+                            </div>
+                        </div>
+                        <br>
                     </div>
-                    <div class="row p-t20">
-                        <form-field-phone min="10" max="18" class="col-md-6" label="Phone" name="phone"></form-field-phone>
-                        <form-field-alpha-num class="col-md-6" label="Address" name="address"></form-field-alpha-num>
-                    </div></div>
-        </form>`
-        
+                </div>
+                <div class="row border border-secondary rounded m-t30 p-a20">
+                    <document-upload style="width: 100%"></document-upload>
+                </div>
+            </div>`;
     }
 }
-export default window.customElements.define(ComponentConstant.MULTIADDRESSESS, MultiAdress);
+
+window.customElements.define(ComponentConstant.MULTIADDRESSES, MultiAddress);
