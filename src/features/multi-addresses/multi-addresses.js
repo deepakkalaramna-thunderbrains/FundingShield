@@ -55,9 +55,7 @@ export class MultiAddress extends ListComponent {
                     </tr>
                 </tbody>
             </table>
-            <div class="row border border-secondary rounded m-t30 p-a20">
-                    <document-upload style="width: 100%"></document-upload>
-                </div> 
+           
         </div>
     </div>
 </div>`;
