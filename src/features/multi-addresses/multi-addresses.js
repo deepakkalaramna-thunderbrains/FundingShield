@@ -1,7 +1,7 @@
 import { ComponentConstant } from "../../constants/ComponentConstant.js";
 import { ListComponent } from "../../components/ListComponent.js";
 
-export class MultiAddress extends ListComponent {
+export class MultiAddresses extends ListComponent {
   constructor(addresses) {
     super();
     this.addresses = addresses || [
@@ -74,4 +74,4 @@ export class MultiAddress extends ListComponent {
   }
 }
 
-window.customElements.define(ComponentConstant.MULTI_ADDRESSES, MultiAddress);
+window.customElements.define(ComponentConstant.MULTI_ADDRESSES, MultiAddresses);
