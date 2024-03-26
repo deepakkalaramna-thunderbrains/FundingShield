@@ -1,36 +1,60 @@
 import { ComponentConstant } from "../../constants/ComponentConstant.js";
 import { ListComponent } from "../../components/ListComponent.js";
+import { FSLambdaAPIService } from "../../services/FSLambdaAPIService.js";
 
 export class MultiAddresses extends ListComponent {
   constructor(addresses) {
     super();
-    this.addresses = addresses || [
-      {
-        address1: "123 Main St",
-        address2: "Apt 101",
-        city: "New York",
-        state: "NY",
-        zipCode: "10001"
-      },
-      {
-        address1: "456 Elm St",
-        address2: "Suite 200",
-        city: "Los Angeles",
-        state: "CA",
-        zipCode: "90001"
-      },
-      {
-        address1: "789 Oak St",
-        address2: "Unit B",
-        city: "Chicago",
-        state: "IL",
-        zipCode: "60601"
+    this.addresses = [];
+  }
+
+  onComponentDataSet(componentData) {
+    console.log(componentData);
+    this.getAddresses();
+    // this.callResourcesAPI();
+    $("#transaction-id").html("");
+  }
+  
+  async getHttpServiceObj() {
+    if (this._componentData) {
+      let transactionId =
+        this._componentData.field_values.order_val_field134.display_value;
+      
+      let httpService = await this.awsService
+        .callAWSLambdaApi("GET_MULTI_ADDRESSES", { transactionId })
+      return httpService;
+    }
+  }
+
+  async getAddresses() {
+    try {
+      const addresses = await this.getMultiAddresses();
+      this.addresses = addresses || [];
+    } catch (error) {
+      console.error("Error fetching addresses:", error);
+    }
+  }
+
+  async getMultiAddresses() {
+    try {
+      if (this._componentData) {
+        let transactionId =
+          this._componentData.field_values.order_val_field134.display_value;
+          transactionId = 1476989;
+        await this.awsService
+        .callAWSLambdaApi("GET_MULTI_ADDRESSES", { transactionId });
       }
-    ];
+      return [];
+    } catch (error) {
+      console.error("Error fetching multi addresses:", error);
+      throw error;
+    }
   }
 
   setHTML() {
-    const addressRows = this.addresses.map(address => `
+    const addressRows = this.addresses
+      .map(
+        (address) => `
       <tr>
         <td>${address.address1}</td>
         <td>${address.address2}</td>
@@ -38,7 +62,9 @@ export class MultiAddresses extends ListComponent {
         <td>${address.state}</td>
         <td>${address.zipCode}</td>
       </tr>
-    `).join('');
+    `
+      )
+      .join("");
 
     return `<div class="container mt-4">
         <div class="row border border-secondary rounded p-3">
